@@ -88,6 +88,7 @@
 
 .hero-slider-signature {
   position: relative;
+  z-index: 1;
 }
 
 .hero-slider-signature img {
