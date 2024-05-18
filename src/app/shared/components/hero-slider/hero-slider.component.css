@@ -1,5 +1,5 @@
 .hero-slider-item {
-  background-image: url(assets/images/banner/golf-bat-ball.jpg);
+  background-image: url(assets/images/banner/golf-bat-ball.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,11 +28,11 @@
 }
 
 .image-card-container:has(.image-card:hover) > .image-card:not(:hover) {
-  opacity: 0.1;
+  opacity: 0;
 }
 
 .image-card {
-  transition: opacity 2s;
+  transition: opacity 1s;
 }
 
 .text-card-container h1 {
@@ -63,6 +63,7 @@
     background-color: #00000099;
   }
 }
+
 .social-icon-container {
   gap: 4px;
 }

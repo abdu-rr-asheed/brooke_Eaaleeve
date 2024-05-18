@@ -19,6 +19,25 @@
   margin-top: 5rem;
 }
 
+.play-btn {
+  cursor: pointer;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 embed.model-video {
   width: 100%;
   aspect-ratio: 16/9;
@@ -40,9 +59,11 @@ embed.model-video {
   .technique-details {
     width: 100%;
   }
+
   .technique-header .hero-title {
     font-size: 5.4rem;
   }
+
   .technique-details p:last-child {
     margin-top: 6rem;
     margin-left: auto;
