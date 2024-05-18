@@ -19,6 +19,16 @@
   margin-top: 5rem;
 }
 
+embed.model-video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+#videoOpenModel .btn-close {
+  opacity: 1;
+  filter: invert(1);
+}
+
 @media (width > 992px) {
   .technique-details p:last-child {
     margin-top: 16rem;

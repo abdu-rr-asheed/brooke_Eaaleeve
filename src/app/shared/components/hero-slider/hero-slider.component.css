@@ -8,7 +8,7 @@
 
 .image-item-container {
   width: 235px;
-  aspect-ratio: 1;
+  aspect-ratio: 10/9;
 }
 
 .image-item-container > img {
@@ -25,6 +25,14 @@
   -webkit-box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.22);
   box-shadow: 0px 0px 39px 0px rgb(0 0 0 / 53%);
+}
+
+.image-card-container:has(.image-card:hover) > .image-card:not(:hover) {
+  opacity: 0.1;
+}
+
+.image-card {
+  transition: opacity 2s;
 }
 
 .text-card-container h1 {
@@ -45,8 +53,16 @@
   background-color: black;
   padding: 5px;
   border-radius: 100%;
+  border: 1px solid transparent;
+  transition: border-color 0.5s, background-color 0.5s;
 }
 
+@media (width > 1200px) {
+  .social-icon-container img:hover {
+    border: 1px solid var(--clr-primary);
+    background-color: #00000099;
+  }
+}
 .social-icon-container {
   gap: 4px;
 }
@@ -110,10 +126,6 @@
 
   .text-card-container p {
     margin-block: 3rem 2rem;
-  }
-
-  .hero-slider-signature img {
-    filter: invert(1);
   }
 }
 

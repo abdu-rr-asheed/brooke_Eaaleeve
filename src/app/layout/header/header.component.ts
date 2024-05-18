@@ -1,10 +1,12 @@
 import { NgClass, NgStyle } from "@angular/common";
 import { Component, Input } from "@angular/core";
 import { RouterLink } from "@angular/router";
+import { MainService } from "@core/service/main.service";
 
 export interface Urls {
   url: string;
   name: string;
+  targetId: string;
 }
 
 @Component({
@@ -22,19 +24,25 @@ export class HeaderComponent {
   urls: Urls[] = [
     {
       url: "/",
-      name: "About Me"
+      name: "About Me",
+      targetId: "aboutMeSection"
     },
     {
       url: "/",
-      name: "Highlight Career"
+      name: "Highlight Career",
+      targetId: "highlightCareerSection"
     },
     {
       url: "/",
-      name: "Partner & Events"
+      name: "Partner & Events",
+      targetId: "partnerEventsSection"
     },
     {
       url: "/",
-      name: "Contact Me"
+      name: "Contact Me",
+      targetId: "contactMeSection"
     }
   ];
+
+  constructor(public mainService: MainService) {}
 }

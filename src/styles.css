@@ -63,10 +63,16 @@ a {
   color: var(--learn-more-clr);
   font-size: 1.2rem;
   font-weight: 600;
+  transition: gap 0.8s, background-color 0.8s;
 }
 
 .learn-more img {
   filter: var(--learn-more-filter);
+}
+
+.learn-more:hover {
+  gap: 14px;
+  background-color: rgba(0, 0, 0, 0.171);
 }
 
 swiper-container::part(bullet),

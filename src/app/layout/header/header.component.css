@@ -4,6 +4,7 @@
 
 header .navbar-nav > li > a {
   color: #fff;
+  transition: color 0.5s;
 }
 
 header .nike-logo {
@@ -26,8 +27,17 @@ header .navbar {
   background: #131e2e;
 }
 
+@media (width > 1200px) {
+  header .navbar-nav > li > a:hover {
+    color: var(--clr-primary);
+  }
+}
+
 @media (width > 992px) {
   .navbar-nav > li {
-    width: 72px;
+    width: 85px;
+  }
+  header .navbar-nav > li > a {
+    font-size: 1.2rem;
   }
 }

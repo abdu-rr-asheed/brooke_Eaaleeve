@@ -7,7 +7,7 @@
       </h2>
       <h6 class="section-title mb-0">My Technique</h6>
       <a [routerLink]="['/']" class="learn-more mb-auto">
-        <span>Contact Me</span>
+        <span>Learn More</span>
         <img src="assets/images/icons/north-arrow.svg" alt="north-arrow" />
       </a>
     </div>
@@ -19,8 +19,16 @@
       <div class="technique-image-section position-relative">
         <img src="assets/images/banner/golf-bat-ball.jpg" alt="technique-image-1" class="aspect-ratio-1 object-fit-cover technique-image w-100" />
         <img src="assets/images/banner/golf-bat.jpg" alt="technique-image2" class="aspect-ratio-1 end-0 object-fit-cover position-absolute technique-image-2 top-0 w-50" />
-        <img src="assets/images/icons/play-btn.svg" alt="play-btn" class="play-btn bottom-0 end-0 m-auto position-absolute start-0 top-0 w-50" />
+        <img src="assets/images/icons/play-btn.svg" alt="play-btn" class="play-btn bottom-0 end-0 m-auto position-absolute start-0 top-0 w-50" data-bs-toggle="modal" data-bs-target="#videoOpenModel" />
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="videoOpenModel" tabindex="-1" aria-labelledby="videoOpenModelLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered flex-column justify-content-center align-items-end modal-xl">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <embed class="model-video" src="https://www.youtube.com/embed/me5gjIUe1Ks?si=EPU3ttetFZ3bgIu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
   </div>
 </div>
