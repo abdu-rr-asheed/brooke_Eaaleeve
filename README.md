@@ -53,6 +53,10 @@ ng s --o
 ng serve --open
 ```
 
+## Screenshots
+
+![App Screenshot](https://github.com/abdu-rr-asheed/brooke_Eaaleeve/blob/master/screen_shot/desktop.png?raw=true)
+
 ## Conclusion
 
 This project represents a significant step forward in our understanding of Angular development. It showcases the power of modern web technologies.
