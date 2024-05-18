@@ -1,48 +1,28 @@
-# BrookeEaaleeve
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-# brooke_Eaaleeve
-
 # Frontend Coding Test (Mid-Level)
 
 Brook Eagleeye - Professional Athlete Landing Page Website https://dribbble.com/shots/23726513-Brook-Eagleeye-Professional-Athlete-Landing-Page-Website
 
+## Design
+
+Deployed Link :- https://brooke-eagleeye.netlify.app/
+
 ## Assumptions
 
-- The project is built and tested on **Windows 11 CoreSingleLanguage**.
-- The project assumes that the application will be run in a modern, standards-compliant web browser.
-- The project will be viewed on various devices with different screen sizes.
+- **Angular CLI**: Assumed that Angular CLI is installed globally.
+- **Node.js and npm**: Assumed that Node.js and npm are installed.
+- **Browser Compatibility**: The application is optimized for modern browsers (Chrome, Firefox, Safari, Edge).
+- **Responsive Design**: The project will be viewed on various devices with different screen sizes.
+- **Third-Party Libraries**: Certain third-party libraries or tools are available and compatible with the version of Angular I used.
 
 ## Improvements Made
 
-- Optimized the algorithm for better performance.
-- Improved the UI for better user experience.
-- Added error handling to make the application more robust.
+- **Performance Optimization**: Implemented lazy loading to improve initial load time.
+- **Responsive Design**: Made the portfolio responsive for better usability on mobile devices.
+- **Accessibility**: Improved accessibility for users with disabilities by following WCAG guidelines.
+- **SEO Optimization**: Optimized the website for search engines by adding meta tags, alt text for images, etc.
+- **Security**: Implemented security best practices to protect the application from common web vulnerabilities.
+- **Code Optimization**: Optimized code for better performance by refactoring and removing redundant code.
+- **UI/UX Design**: Redesigned the user interface for a more modern and visually appealing look.
 
 ## How to Test the Project on a New Machine
 
@@ -55,7 +35,7 @@ npm install -g @angular/cli
 ### Step 2: Clone the repository:
 
 ```shell
-https://github.com/links-lang/links-examples
+git clone https://github.com/abdu-rr-asheed/brooke_Eaaleeve.git
 ```
 
 ### Step 3: Install Packages:
@@ -72,10 +52,6 @@ npm install
 ng s --o
 ng serve --open
 ```
-
-## Design
-
-Please visit the URL to see the original design. https://brooke-eagleeye.netlify.app/
 
 ## Conclusion
 
