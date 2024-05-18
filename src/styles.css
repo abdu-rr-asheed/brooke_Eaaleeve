@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --clr-primary: #dae85e;
+  --clr-primary-filter: invert(90%) sepia(46%) saturate(602%) hue-rotate(6deg) brightness(99%) contrast(83%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.bg-primary-clr {
+  background-color: var(--clr-primary);
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.aspect-ratio-1 {
+  aspect-ratio: 1;
+}
+
+.section-title {
+  --sec-title: black;
+  color: var(--sec-title);
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.hero-title {
+  --hero-title: black;
+  color: var(--hero-title);
+  font-size: 8.7rem;
+  font-weight: 900;
+}
+
+.hero-parah {
+  --hero-parah-clr: black;
+  color: var(--hero-parah-clr);
+  width: 400px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.learn-more {
+  --learn-more-clr: black;
+  --learn-more-filter: none;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 32px;
+  border: 2px solid var(--learn-more-clr);
+  border-radius: 40px;
+  color: var(--learn-more-clr);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.learn-more img {
+  filter: var(--learn-more-filter);
+}
+
+swiper-container::part(bullet),
+swiper-container::part(bullet-active) {
+  margin: 0 15px;
+  background-color: white;
+}
+
+swiper-container::part(bullet) {
+  opacity: 0.5;
+}
+
+@media (width < 576px) {
+  .hero-parah {
+    width: auto;
+  }
+}

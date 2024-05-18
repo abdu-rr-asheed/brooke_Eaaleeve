@@ -1,0 +1,46 @@
+.technique-container {
+  padding-block: 5rem;
+}
+
+.technique-header .hero-title {
+  width: min-content;
+  line-height: 0.9;
+}
+
+.technique-image-section {
+  margin: 6rem 20.5% 0 0;
+}
+
+.technique-image-2 {
+  transform: translate(50%, -50%);
+}
+
+.technique-details-section {
+  margin-top: 5rem;
+}
+
+@media (width > 992px) {
+  .technique-details p:last-child {
+    margin-top: 16rem;
+    margin-left: -20%;
+  }
+}
+
+@media (width < 992px) {
+  .technique-details {
+    width: 100%;
+  }
+  .technique-header .hero-title {
+    font-size: 5.4rem;
+  }
+  .technique-details p:last-child {
+    margin-top: 6rem;
+    margin-left: auto;
+  }
+}
+
+@media (width < 576px) {
+  .technique-header .hero-title {
+    font-size: 3.1rem;
+  }
+}

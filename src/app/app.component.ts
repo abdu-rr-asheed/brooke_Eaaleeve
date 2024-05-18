@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+// Angular Core
+import { Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
+
+// Components
+import { HeaderComponent } from "./layout/header/header.component";
+import { FooterComponent } from "./layout/footer/footer.component";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.css"
 })
-export class AppComponent {
-  title = 'BrookeEaaleeve';
-}
+export class AppComponent {}

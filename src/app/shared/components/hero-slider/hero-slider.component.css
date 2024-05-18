@@ -1,0 +1,141 @@
+.hero-slider-item {
+  background-image: url(assets/images/banner/golf-bat-ball.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 120px;
+}
+
+.image-item-container {
+  width: 235px;
+  aspect-ratio: 1;
+}
+
+.image-item-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-card-container .image-card:nth-child(2) {
+  transform: rotate(21deg) translateX(60px);
+}
+
+.image-card {
+  -webkit-box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 0px 39px 0px rgb(0 0 0 / 53%);
+}
+
+.text-card-container h1 {
+  font-size: 10rem;
+  font-weight: 900;
+  color: var(--clr-primary);
+  text-align: right;
+}
+
+.text-card-container p {
+  color: white;
+  text-align: right;
+  margin-block: 7rem 4rem;
+}
+
+.social-icon-container img {
+  width: 50px;
+  background-color: black;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.social-icon-container {
+  gap: 4px;
+}
+
+.hero-slider-container swiper-container::part(pagination) {
+  text-align: start;
+  bottom: 50px;
+  margin: auto;
+  right: 0;
+  width: 100%;
+}
+
+.hero-slider-container swiper-container::part(bullet),
+.hero-slider-container swiper-container::part(bullet-active) {
+  margin: 0 15px;
+  background-color: white;
+}
+
+.hero-slider-container swiper-container::part(bullet) {
+  opacity: 0.5;
+}
+
+.hero-slider-signature {
+  position: relative;
+}
+
+.hero-slider-signature img {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+@media (width >=1400px) {
+  .hero-slider-container swiper-container::part(pagination) {
+    max-width: 1320px;
+  }
+}
+
+@media (width < 1400px) {
+  .hero-slider-container swiper-container::part(pagination) {
+    max-width: 1140px;
+  }
+}
+
+@media (width < 1200px) {
+  .hero-slider-container swiper-container::part(pagination) {
+    max-width: 960px;
+  }
+
+  .text-card-container h1 {
+    font-size: 7rem;
+  }
+}
+
+@media (width < 992px) {
+  .hero-slider-container swiper-container::part(pagination) {
+    max-width: 720px;
+  }
+
+  .text-card-container p {
+    margin-block: 3rem 2rem;
+  }
+
+  .hero-slider-signature img {
+    filter: invert(1);
+  }
+}
+
+@media (width < 768px) {
+  .hero-slider-container swiper-container::part(pagination) {
+    max-width: 540px;
+  }
+}
+
+@media (width >=576px) {
+  .text-card-container p {
+    width: 400px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (width < 576px) {
+  .text-card-container h1 {
+    font-size: 4rem;
+  }
+
+  .text-card-container p {
+    font-size: 1rem;
+  }
+}

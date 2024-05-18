@@ -1,0 +1,62 @@
+.partnerships-and-events-container {
+  background-color: #131e2e;
+}
+
+.par-and-eve-hero-title.hero-title {
+  line-height: 0.8;
+}
+
+.partnerships-and-events-details {
+  padding-inline: 9%;
+}
+
+.par-and-eve-parah-contai {
+  padding-block: 4rem;
+}
+
+.par-and-eve-slider-contai swiper-container::part(container) {
+  padding-bottom: 75px;
+}
+
+.par-and-eve-slider-contai swiper-slide {
+  width: calc(110% / 3);
+}
+
+@media (width > 1200px) {
+  .par-and-eve-parah {
+    margin-right: 6rem;
+  }
+}
+
+@media (width < 992px) {
+  .partnerships-and-events-details {
+    padding-inline: 0;
+  }
+
+  h2.par-and-eve-hero-title.hero-title {
+    font-size: 6.7rem;
+  }
+}
+
+@media (width < 768px) {
+  h2.par-and-eve-hero-title.hero-title {
+    font-size: 4.7rem;
+  }
+
+  .par-and-eve-parah.hero-parah {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (width < 576px) {
+  h2.par-and-eve-hero-title.hero-title {
+    font-size: 2.7rem;
+  }
+
+  .par-and-eve-title.position-absolute.section-title {
+    position: relative !important;
+  }
+  .par-and-eve-slider-contai swiper-slide {
+    width: 85%;
+  }
+}
